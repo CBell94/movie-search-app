@@ -1,0 +1,11 @@
+<body style="color:red; background:gold; font-weight:800; background-image: url('https://images.pexels.com/photos/65128/pexels-photo-65128.jpeg?w=940&h=650&auto=compress&cs=tinysrgb')">
+<h1><em>This the results page!</em></h1>
+
+<% data["Search"].forEach(function(movie) { %>
+<hr style="border:10px solid green" />
+   <li> <%= movie["Title"] %> - <%= movie["Year"] %>  <% movie["Poster"] %></li>
+<% }) %> <br />
+
+<a href="/">Back to Search</a>
+
+</body>
